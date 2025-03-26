@@ -35,9 +35,9 @@ export default function Header() {
         <div className="bg-slate-100 text-black py-2 px-6 rounded font-bold hover:bg-blue-300 transition-all duration-300 shadow-md">
           <Link to={'/login'}>Login</Link>
         </div>
-        <div className='lg:hidden block'>
+        {/* <div className='lg:hidden block'>
           <Sidebar />
-        </div>
+        </div> */}
       </div>
     </div>
   );
