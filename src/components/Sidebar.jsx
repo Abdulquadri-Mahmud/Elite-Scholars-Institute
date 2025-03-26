@@ -9,27 +9,26 @@ const Sidebar = () => {
   const navigation = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    // { name: 'Services', path: '/services' },
-    // { name: 'Contact', path: '/contact' },
-    { name: 'Login', path: '/login' },
+    { name: 'Services', path: '/services' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
     <div>
       {/* Sidebar Toggle Button */}
-      <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-1 cl2 text-black bg-white fixed top-4 right-4 z-50 rounded-md transition-transform hover:scale-105">
+      <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-2 cl2 text-white bg-gradient-to-r from-blue-500 to-purple-600 fixed top-4 right-4 z-50 rounded-md transition-transform hover:scale-105">
         {sidebarOpen ? <FaRegWindowClose className="text-2xl" /> : <RiMenu4Line className="text-2xl" />}
       </button>
 
       {/* Sidebar Container */}
-      <div className={`fixed inset-y-0 right-0 z-40 w-[80%] bg-white text-black transform ${
+      <div className={`fixed inset-y-0 right-0 z-40 w-[70%] bg-white text-black transform ${
           sidebarOpen ? '-translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out shadow-lg`}>
         {/* Sidebar Header */}
         <div className="p-4 flex items-center justify-between border-b border-gray-200">
             <div className="flex">
               <Link to="/" className="font-extrabold text-3xl text-gray-900 transition duration-300 ease-in-out transform hover:scale-110"> 
-                  Gaposa
+                  Ambitioux
               </Link>
             </div>
           <button onClick={() => setSidebarOpen(false)} className="text-white p-1 rounded-md focus:outline-none">
